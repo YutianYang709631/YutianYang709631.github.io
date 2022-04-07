@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: DengXian, sans-serif ;
+
+}
+
+/* anchor style */
+a {
+    font-family: "smooch sans", serif;
+    font-size: 100%;
+    position: relative;
+    display: inline-block;
+    padding: .4em 1em;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    color: rgba(255, 255, 255, .9);
+}
+a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .4;
+    background: linear-gradient(135deg, lightskyblue 3%, #6e8ffb, #a787e3,  lightskyblue 97%);
+    border-radius: 11px 6px;
+    transition: box-shadow 0.5s ease, transform 0.2s ease;
+    will-change: transform;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0)) translateZ(var(--tz, -12px));
+}
+a:hover::before {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .8);
+}
+a::after {
+    position: relative;
+    display: inline-block;
+    content: attr(data-title);
+    transition: transform 0.2s ease;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    will-change: transform;
+    transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0));
+}
+
+/* body */
+body {
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    width: 100%;
+    transform-style: preserve-3d;
+    /*transform: perspective(800px);*/
+    background-attachment: fixed;
+}
+
+#pageBG {
+    background-image: url("../pictures/planet.jpg"),
+    linear-gradient(to top, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0) 50%);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    background-attachment: fixed;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+main {
+    min-width: 500px;
+    min-height: 200px;
+}
+
+.header_name {
+    position: relative;
+    font-family: 'Smooch Sans', sans-serif;
+    margin-left: 3em;
+    margin-bottom: 1em;
+    margin-top: 40%;
+    color: whitesmoke;
+}
+.header_name #name {
+    margin:.1em 0 0 0;
+    font-size: 1000%;
+    font-weight: lighter;
+    letter-spacing: .1em;
+    text-shadow: 0 0 20px rgba(255, 255, 255, .5) ;
+
+}
+.header_name #intro {
+    margin:0 0 0 0;
+    font-size: 200%;
+    padding-left: .3em;
+    letter-spacing: .1em;
+}
+nav ul li{
+    margin-left: .4em;
+}
+
+/* the styles for the top right horizontal navigation menu */
+#nav_top {
+    padding: 2em 0 .5em 0;
+    top: 0;
+    right: 0;
+}
+
+#back\ blur {
+    width: 700px;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    filter: blur(5px);
+    background: linear-gradient(30deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .6));
+}
+
+#nav_top ul{
+    float: right;
+    padding-right: 1em;
+    z-index: 10;
+}
+
+#nav_top a {
+    font-size: 90%;
+}
+
+#nav_bottom {
+    display: none;
+    position: absolute;
+    top: 100%;
+    margin-top: 100px;
+    transition:  margin-top 1s ease;
+}
+.header_name {
+    transition: margin-top .5s ease;
+}
+.header_name:hover {
+    margin-top: 35%;
+}
+.header_name:hover + #nav_bottom {
+    margin-top: 20px;
+    display: block;
+}
+
+.header_name::after{
+    margin-top: 35%;
+    display: block;
+}
+
+/*#nav_bottom > ul ::after {*/
+/*    display: block;*/
+/*}*/
+
+#nav_bottom ul {
+    list-style: none;
+    padding: .5em 1em;
+    text-align: left;
+    margin-left: 2em;
+}
+
+#nav_bottom a {
+    font-size: 110%;
+
+}
+
+#nav_bottom > ul::after {
+    content: "";
+    display: block;
+}
+ul li {
+    display: inline-block;
+}
+
+/*#nav_top ul li a.current { text-decoration: none; }*/
+
+/* the styles for the second horizontal navigation menu */
+/*#nav_menu_3 ul {*/
+/*    list-style: none;*/
+/*}*/
+/*#nav_menu_3 ul li {*/
+/*    float: left;*/
+/*}
+/*    font-weight: bold;*/
+/*    border-right: 2px solid white;*/
+/*}*/
+/*#nav_menu_3 ul li a.lastitem {*/
+/*    border-right: none;*/
+/*}*/
+/*#nav_menu_3 ul li a.current { color: yellow; }*/
