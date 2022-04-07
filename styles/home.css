@@ -249,7 +249,7 @@ main {
 }
 
 .content p, .content blockquote{
-    font-size: 130%;
+    font-size: 1.2rem;
     margin-top: .4rem;
     margin-bottom: .4rem;
     padding: 0 .5rem;

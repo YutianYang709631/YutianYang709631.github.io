@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Smooch_Sans">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/font/Smooch_Sans.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
