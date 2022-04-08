@@ -272,7 +272,9 @@ main {
 
 /* introduction part styling */
 .introduction {
-    background-image: url("../BGP/web.png");
+    background-image: url("../BGP/web.png"),
+    linear-gradient(rgba(153, 200, 150, .1), rgba(255, 255, 255, 0) 20%);
+    background-blend-mode: multiply;
     background-repeat: repeat-x;
     background-position: left top;
     /*grid-area: intro;*/
