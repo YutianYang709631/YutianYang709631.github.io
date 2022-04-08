@@ -137,6 +137,7 @@ header {
     font-size: 950%;
     font-weight: lighter;
     letter-spacing: .5rem;
+    margin-bottom: -.5rem;
     /*text-shadow: 0 0 20px rgba(255, 255, 255, .5) ;*/
 }
 
@@ -148,8 +149,9 @@ header {
 .header_name #intro {
     margin: 0;
     font-size: 190%;
-    padding-left: .3rem;
+    padding-left: .5rem;
     letter-spacing: .2rem;
+
     /*text-shadow: 0.4rem 0.4rem 3px rgba(0, 0, 0, .8), -0.2rem -0.2rem 4px rgba(200, 200, 200, .5);*/
 }
 
